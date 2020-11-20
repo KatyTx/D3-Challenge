@@ -102,11 +102,9 @@ d3.csv("assets/data/data.csv").then(function (demoData) {
         });
 
     // Create tooltip in the chart
-    // ==============================
     circlesGroup.call(toolTip);
 
     //Create event listeners to display and hide the tooltip
-    // ==============================
     circlesGroup.on("mouseover", function (data) {
         toolTip.show(data, this);
         //.attr('fill', 'green');
@@ -133,8 +131,5 @@ d3.csv("assets/data/data.csv").then(function (demoData) {
 
 }).catch(function (error) {
     console.log(error);
-
-
-
 
 });
